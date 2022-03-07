@@ -1,0 +1,13 @@
+<div>
+    <mat-form-field>
+        <input matInput placeholder="Nombre" type="text" name="nombre" [(ngModel)]="nombre" placeholder="nombre">
+    </mat-form-field>
+
+    <button mat-mini-fab color="warn" (click)="agregar()">
+      <mat-icon>plus_one</mat-icon>
+    </button>
+</div>
+
+<div>
+    <app-item-persona *ngFor="let persona of personas" [persona]="persona"></app-item-persona>
+</div>
